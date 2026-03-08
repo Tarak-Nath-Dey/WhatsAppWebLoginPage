@@ -1,0 +1,247 @@
+<!-- Home Page -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            background-color: white;
+        }
+        main {
+            margin: 0;
+            padding: 0;
+            min-height: 80vh;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; 
+            gap: 10px;
+        }
+        #first{
+            padding: 2px 20px 2px 20px;
+        }
+        #description, #hdescription{
+            padding: 0px;
+            margin: 5px;
+        }
+        #WA{
+            height: 38px;
+            width:38px;
+            margin-left: 30px;
+            margin-right:4px;
+        }
+        #logo{
+            display: flex;
+            align-items: center;
+        }
+        header {
+            background-color: white;
+            color: rgb(65, 163, 65);
+            margin: 0px;
+            padding: 0px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        section {
+            background-color: white;
+            border: black 1px solid;
+            padding: 20px;
+            border-radius: 20px;
+            margin: 5px;
+            width: 65%;
+        }
+        .sec1{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        #image1{
+            height: 70px;
+            width: 70px;
+        }
+        #download{
+            height: 50px;
+            width: 150px;
+            background-color: rgb(65, 163, 65);
+            border:black 1px solid;
+            padding: 10px 15px;
+            border-radius: 30px;
+            color: black;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #download:hover{
+            background-color: black;
+            color: white;
+        }
+        #heading{
+            margin-top: 12px;
+        }
+        .points {
+            margin: 17px 0;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .points img {
+            height: 20px;
+            width: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        #list{
+            display: flex;
+            justify-content: space-between; 
+            align-items: flex-start; 
+        }
+        #last{
+            margin-top: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #last span {
+            display: flex;
+            align-items: center;
+            gap: 6px; 
+        }
+        #tick{
+            width: 17px;
+            height: 17px;
+            accent-color: rgb(25, 236, 25); 
+        }
+        #login{
+            text-decoration: underline;
+            text-decoration-color: rgb(25, 236, 25);
+            text-decoration-thickness: 2px;
+            text-underline-offset: 4px;
+            color: black;
+            font-weight: 500;
+        }
+        #phone{
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+        }
+        #phone:hover, #login:hover{
+            color: rgb(27, 90, 27);
+        }
+
+        .image-container {
+            position: relative; 
+            width: 200px;       
+            height: 200px;     
+        }
+
+        .image-container img.bg {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .image-container img.overlay {
+            position: absolute; 
+            top: 38%;          
+            left: 40%;
+            width: 50px;        
+            height: 50px;
+        }
+        
+        section h2 {
+            margin-top: 0;
+        }
+        ol {
+            padding-left: 20px;
+            padding-right: 10px;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 200px;
+        }
+        .sec3{
+            margin: 10px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .sec4{
+            margin: 10px;
+            font-size: 16px;
+            color: rgb(69, 69, 69);
+        }
+        .sec5{
+            margin: 10px;
+            font-size: 12px;
+            color: rgb(69, 69, 69);
+            text-decoration-color: rgb(69, 69, 69);
+        }
+        .sec5:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .circle {
+            display: inline-block;
+            width: 30px;          
+            height: 30px;         
+            line-height: 30px;    
+            border-radius: 50%;   
+            border: 1px solid black; 
+            text-align: center;  
+            font-size: 16px;
+        }
+
+    </style>
+ </head>
+ <body>
+    <header>
+        <span id="logo">
+        <img src="whatsapp.png" alt="" id="WA">
+        <h1>WhatsApp</h1>
+        </span>
+    </header>
+    <main>
+        <section id="first">
+            <div class="sec1">
+            <img src="converted_image.png" alt="" id="image1">
+            <div><h3 id="hdescription">Download WhatsApp for Windows</h3>
+            <p id="description">Make calls, share your screen and get a faster experience when you download the Windows app.</p>
+            </div>
+            <button id="download">Download &#x21E9;</button>
+            </div>
+        </section>
+        <section>
+            <div id="list">
+            <div id="heading"><h2>Steps to log in</h2>
+            <p class="points"><span class="circle">1</span>
+Open WhatsApp <img src="WhatsApp_logo.png" alt=""> on your phone</p>
+            <p class="points"><span class="circle">2</span>On Android tap Menu <img src="threedots_menu.png" alt="">. On iPhone tap Settings <img src="settings.png" alt=""></p>
+            <p class="points"><span class="circle">3</span>Tap Linked devices, then Link device</p>
+            <p class="points"><span class="circle">4</span>Scan the QR code to confirm</p>
+            </div>
+            <div class="image-container">
+            <img src="QR_code_login.png" alt="" class="bg">
+            <img src="whatsapp_overwrite.png" alt="" class="
+            overlay">
+            </div>
+            </div>
+            <div id="last">
+            <span><input type="checkbox" name="" id="tick">Stay logged in on this browser &#9432;</span>
+            <a href="#" id="phone"><u id="login">Log in with phone number</u> &#x276F;</a>
+            </div>
+        </section>
+        <div class="sec3"><b>Don't have a WhatsApp account?</b> 
+        <a href="#" id="phone"><u id="login">Get started</u> &#x2B08;</a></div>
+        <div class="sec4">&#x1F512;&#xFE0E;Your personal messages are end-to-end encrypted</div>
+        <div class="sec5">Terms & Privacy Policy</div>
+    </main>
+ </body>
+ </html>
